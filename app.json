@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/classic/classic"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "龙三",
+    "navigationStyle":"default",
+    "backgroundColor":"#ffffff",
+    "enablePullDownRefresh":true,
+    "pageOrientation":"auto"
+  }
+}

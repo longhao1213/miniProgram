@@ -1,0 +1,40 @@
+/* pages/classic/classic.wxss */
+.chunk{
+  width: 150px;
+  height: 100px;
+}
+
+.container{
+  /* 布局方式 */
+  display: flex;
+  height:300px;
+  background-color: #999999;
+  /* 
+    轴 : 主轴,交叉轴
+    flex-direction的方向决定于主轴的方向
+   */
+
+  /* 排列方向 */
+  flex-direction: row;
+  /* 主轴的对齐方式 */
+  justify-content: flex-start;
+  /* 交叉轴的对奇方式 */
+  align-items: flex-start;
+  /* 换行 */
+  flex-wrap: wrap;
+}
+
+.color1{
+  background-color: red;
+  font-size: 10px;
+}
+
+.color2{
+  background-color: blue;
+  font-size: 30px;
+}
+
+.color3{
+  background-color: yellow;
+  font-size: 20px;
+}

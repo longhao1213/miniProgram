@@ -1,0 +1,6 @@
+
+page{
+  /* 小程序中,只有font 和color能被组件继承 */
+  font-family: PingFangSC-Thin;
+  font-size: 32rpx;
+}

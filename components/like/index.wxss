@@ -1,0 +1,24 @@
+/* components/like/index.wxss */
+.container{
+  /* 宽度自适应flex */
+  display: inline-flex;
+  /* 横向排列 */
+  flex-direction: row;
+  /* 消除文字周边空白间距 */
+  padding: 10rpx;
+}
+.container image{
+  width: 32rpx;
+  height: 28rpx;
+}
+
+.container text{
+  font-size: 24rpx;
+  color: #bbbbbb;
+  /* 设置元素偏移 */
+  position: relative;
+  /* 向下偏移 */
+  bottom: 6px;
+  /* 向左偏移 */
+  left: 3px;
+}
