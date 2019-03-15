@@ -1,8 +1,10 @@
-import {HTTP} from '../util/HTTP.js'
+import {
+  HTTP
+} from '../util/HTTP.js'
 
-class LikeModel extends HTTP{
-  like(like,id,type){
-    let url = like == 'like' ? 'like' :'like/cancel'
+class LikeModel extends HTTP {
+  like(like, id, type) {
+    let url = like == 'like' ? 'like' : 'like/cancel'
     this.request({
       url: url,
       method: "POST",
@@ -12,6 +14,15 @@ class LikeModel extends HTTP{
       }
     })
   }
+
+  getClassicLikeStatus(artId, category, sCallback) {
+    this.request({
+      url: 'classic/' + category + '/' + artId + '/favor',
+      success:sCallback
+    })
+  }
 }
 
-export {LikeModel}
+export {
+  LikeModel
+}

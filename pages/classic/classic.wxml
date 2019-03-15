@@ -1,5 +1,10 @@
+<view class="container">
 <view class='header'>
 <epsoide-cmp class='epsoide' index="{{classicData.index}}"/>
-<like-cmp class='like' bind:like="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" />
+<like-cmp class='like' bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
 </view>
-<movie-cmp img="{{classicData.image}}" content="{{classicData.content}}" />
+<movie-cmp wx:if="{{classicData.type == 100}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+<music-cmp wx:if="{{classicData.type == 200}}" src="{{classicData.url}}" title="{{classicData.title}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+<essay-cmp wx:if="{{classicData.type == 300}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+<navi-cmp class="navi" bind:left="onNext" bind:right="onPrevious" title="{{classicData.title}}" frist="{{frist}}" latest="{{latest}}" />
+</view>

@@ -31,17 +31,16 @@ class HTTP{
             // 获取返回值中的具体错误编码
             let err_code = res.data.error_code
             // 调用错误展示方法
-            this._show_err(err_code)
+            this._show_err(err_code+"")
         }
       },
       fail:(err)=>{
-        this._show_err(-1)
+        this._show_err(-1+"")
       }
     })
   }
 
   _show_err(err_code){
-    console.log(err_code)
     if(!err_code){
       err_code = 1
     }

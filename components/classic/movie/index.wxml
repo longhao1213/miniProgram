@@ -1,5 +1,5 @@
-<view class='.classic_container'>
-<image class=".classic_img" src="{{img}}" />
-<image class=".tag" src="images/movie@tag.png" />
-<text class=".content">{{content}}</text>
+<view class='classic_container'>
+  <image class="classic_img {{playing?'rotation':''}}" src="{{img}}" />
+  <image class="tag" src="images/movie@tag.png" />
+  <text class="content">{{content}}</text>
 </view>
