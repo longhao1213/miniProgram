@@ -46,7 +46,7 @@ class HTTP{
     }
     // 调用小程序默认展错误方法
     wx.showToast({
-      title: tips[err_code],
+      title: tips[err_code] ? tips[err_code] : tips[1],
       icon:'none',
       duration:2000
     })
